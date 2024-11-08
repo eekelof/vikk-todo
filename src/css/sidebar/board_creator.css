@@ -1,0 +1,52 @@
+.boardCreator {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.boardCreatorAddBtn {
+    position: relative;
+    width: calc(100% - 20px);
+    height: 48px;
+    background: var(--btnBgThemed);
+    background-size: 200% auto;
+    margin-bottom: 5px;
+}
+
+.boardCreatorAddBtn:hover {
+    background-position: right center;
+}
+
+.boardCreatorAddBtn .icon {
+    height: 32px;
+}
+
+.boardCreatorUploadBtn,
+.boardCreatorDownloadBtn {
+    position: relative;
+    width: calc(50% - 20px);
+    height: 32px;
+    display: inline-block;
+    padding: 4px;
+    box-shadow: none;
+}
+
+.boardCreatorUploadBtn:hover,
+.boardCreatorDownloadBtn:hover {
+    background: var(--btnBgHover);
+}
+
+.boardCreatorUploadBtn {
+    float: left;
+}
+
+.boardCreatorDownloadBtn {
+    float: right;
+}
+
+.boardCreatorUploadBtn .icon,
+.boardCreatorDownloadBtn .icon {
+    height: 24px;
+    fill: var(--fontColor);
+}

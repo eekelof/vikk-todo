@@ -1,0 +1,77 @@
+.confirmBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0008;
+    animation: confirmBoxAnimation var(--transitionTime);
+}
+
+.confirmBoxInner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: var(--cardBg);
+    height: 102px;
+    line-height: 96px;
+    min-width: 192px;
+    padding: 24px;
+    padding-top: 32px;
+    border-radius: var(--borderRadius);
+    font-size: 18px;
+    text-align: center;
+    overflow: hidden;
+    animation: confirmBoxInnerAnimation var(--transitionTime);
+}
+
+.confirmBoxText {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 48px;
+    line-height: 52px;
+    background: var(--confirmBoxTint);
+    font-size: 16px;
+}
+
+.confirmBoxCancel,
+.confirmBoxConfirm {
+    position: absolute;
+    bottom: 16px;
+    top: auto;
+}
+
+.confirmBoxCancel {
+    left: 24px;
+}
+
+.confirmBoxConfirm {
+    right: 24px;
+    fill: #f44;
+}
+
+@keyframes confirmBoxAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes confirmBoxInnerAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(0, 0);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1, 1);
+    }
+}

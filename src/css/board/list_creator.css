@@ -1,0 +1,30 @@
+.listCreator {
+    opacity: 0.6;
+    transition: var(--transitionTime);
+    height: 115px;
+}
+
+.listCreator:hover {
+    opacity: 1;
+}
+
+.listCreatorInput {
+    margin-top: 12px;
+}
+
+.listCreatorAddBtn {
+    position: relative;
+    width: calc(100% - 20px);
+    height: 44px;
+    padding: 6px;
+    background: var(--btnBgThemed);
+    background-size: 200% auto;
+}
+
+.listCreatorAddBtn:hover {
+    background-position: right center;
+}
+
+.listCreatorAddBtn .icon {
+    height: 32px;
+}

@@ -1,0 +1,56 @@
+.card {
+    position: relative;
+    width: calc(100% - 20px);
+
+    background: var(--cardBg);
+    color: var(--fontColor);
+    font-size: 16px;
+    border-radius: var(--borderRadius);
+    border: var(--border);
+    margin: 10px;
+    margin-top: 16px;
+    margin-bottom: 4px;
+
+    box-sizing: border-box;
+
+    padding-top: 44px;
+    padding-bottom: 16px;
+    padding-left: 14px;
+    padding-right: 32px;
+
+    text-align: left;
+    letter-spacing: 1.3px;
+    white-space: wrap;
+
+    transition: var(--transitionTime);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-position: right center;
+}
+
+.cardColored {
+    font-weight: bold;
+    color: #fff;
+}
+
+.cardIconColor {
+    right: 48px;
+}
+
+.cardIconUp {
+    left: 8px;
+}
+
+.cardIconDown {
+    left: 40px;
+}
+
+.cardIconLeft {
+    left: 72px;
+}
+
+.cardIconRight {
+    left: 104px;
+}

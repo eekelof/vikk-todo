@@ -1,0 +1,44 @@
+@import 'list.css';
+@import 'list_creator.css';
+@import "card.css";
+
+#board {
+    position: absolute;
+    left: 256px;
+    top: 0px;
+    width: calc(100% - 256px);
+    height: 100%;
+    transition: var(--transitionTime);
+    overflow: hidden;
+}
+
+.boardExpanded {
+    left: 0px !important;
+    width: 100% !important;
+}
+
+#boardTitle {
+    position: absolute;
+    left: calc(var(--leftPadding) + 8px);
+    top: 24px;
+    font-family: var(--titleFont);
+    font-size: 24px;
+    color: #fffa;
+}
+
+#lists {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    top: 64px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-left: var(--leftPadding);
+    padding-right: 80px;
+
+    width: 100%;
+    height: calc(100% - 72px);
+    box-sizing: border-box;
+}

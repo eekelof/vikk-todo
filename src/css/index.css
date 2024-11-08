@@ -1,0 +1,52 @@
+@import "app.css";
+@import "misc/icon.css";
+@import "misc/settings.css";
+@import "misc/background.css";
+@import "misc/confirm_box.css";
+@import "sidebar/sidebar.css";
+@import "board/board.css";
+
+:root {
+    --transitionTime: 0.2s;
+    --leftPadding: clamp(40px, 5vw, 64px);
+    --borderRadius: 8px;
+    --titleFont: 'Roboto', sans-serif;
+    --btnBgThemed: linear-gradient(to right, var(--bg) 0%, var(--bgBlob1) 51%, var(--bg) 100%);
+
+    /* Background */
+    --bg: #012;
+    --bgBlob1: #000;
+    --bgBlob2: #000;
+    --bgBlob3: #000;
+
+    /* Theme specific styles */
+    --border: 1px solid #fff3;
+    --fontColor: #fff;
+    --titleBg: #111;
+    --sidebarBg: #0006;
+    --listBg: #0006;
+    --inputBg: #444;
+    --inputBgFocus: #666;
+    --cardBg: #333;
+    --boxShadow: 0 0 8px 0 #0008;
+    --btnBg: #0002;
+    --btnBgHover: #0004;
+    --scrollbarColor: #fff4;
+    --confirmBoxTint: #0004;
+}
+
+.light {
+    --border: 1px solid #fff6;
+    --fontColor: #111;
+    --titleBg: #fff;
+    --sidebarBg: #0001;
+    --listBg: #fffa;
+    --inputBg: #ddd;
+    --inputBgFocus: #fff;
+    --cardBg: #fff;
+    --boxShadow: 0 0 0px 0 #0002;
+    --btnBg: #fffa;
+    --btnBgHover: #fff;
+    --scrollbarColor: #fffa;
+    --confirmBoxTint: #0001;
+}
